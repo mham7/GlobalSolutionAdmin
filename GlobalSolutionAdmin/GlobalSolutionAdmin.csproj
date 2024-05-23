@@ -65,6 +65,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\DashboardCard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -72,6 +76,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\DashboardCard.xaml.cs">
+      <DependentUpon>DashboardCard.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -112,16 +119,16 @@
     <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\user.png" />
+    <Resource Include="Views\Resources\user.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\building.png" />
+    <Resource Include="Views\Resources\building.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\dshbrd.png" />
+    <Resource Include="Views\Resources\dshbrd.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\logout.png" />
+    <Resource Include="Views\Resources\logout.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

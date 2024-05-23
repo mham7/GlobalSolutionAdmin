@@ -3,9 +3,9 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:GlobalSolutionAdmin"
+   xmlns:local="clr-namespace:GlobalSolutionAdmin.Views"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="1100">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
@@ -16,16 +16,16 @@
         <StackPanel Orientation="Vertical" Margin="50" Grid.Column="0">
 
 
-            <Image Source="C:\Users\aliinham\source\repos\GlobalSolutionAdmin\GlobalSolutionAdmin\Resources\dshbrd.png"
+            <Image Source="Resources\dshbrd.png"
            Style="{StaticResource ImageStyle}"/>
 
-            <Image Source="C:\Users\aliinham\source\repos\GlobalSolutionAdmin\GlobalSolutionAdmin\Resources\user.png"
+            <Image Source="Resources\user.png"
            Style="{StaticResource ImageStyle}"/>
 
-            <Image Source="C:\Users\aliinham\source\repos\GlobalSolutionAdmin\GlobalSolutionAdmin\Resources\building.png"
+            <Image Source="Resources\building.png"
            Style="{StaticResource ImageStyle}"/>
 
-            <Image Source="C:\Users\aliinham\source\repos\GlobalSolutionAdmin\GlobalSolutionAdmin\Resources\logout.png"
+            <Image Source="Resources\logout.png"
            Style="{StaticResource ImageStyle}"/>
 
 
@@ -35,49 +35,15 @@
         <StackPanel Orientation="Vertical" Margin="10" Grid.Column="1">
             <TextBlock Text="Main Panel" FontFamily="Fonts\Poppins-Bold.ttf" FontWeight="Bold" FontSize="16" Margin="0,0,0,10"/>
 
-            <StackPanel Orientation="Horizontal">
-
-                <Border BorderBrush="Gray" BorderThickness="1" Padding="10" Margin="0,0,30,0" CornerRadius="5" Width="320" Height="150">
-                    <Grid>
-
-                        <TextBlock Text="Customers" FontSize="18" FontFamily="Fonts\Nunito-Medium.ttf" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="DarkSlateGray"/>
-                        <TextBlock Text="200" FontSize="22" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,22,0,0"/>
-                        <TextBlock Text="View Clients" FontSize="18"  FontFamily="Fonts\Poppins-Bold.ttf" TextDecorations="Underline" Foreground="Indigo" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,0,-6,-9"/>
-                    </Grid>
-                </Border>
-
-
-                <Border BorderBrush="Gray" BorderThickness="1" Padding="10" Margin="0,0,30,0" CornerRadius="5" Width="320" Height="150">
-                    <Grid>
-
-                        <TextBlock Text="Sites"  FontSize="18" FontFamily="Fonts\Nunito-Medium.ttf" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-                        <TextBlock Text="170" FontSize="18" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,22,0,0"/>
-                        <TextBlock Text="View Sites" FontSize="12"  FontFamily="Fonts\Poppins-Bold.ttf" TextDecorations="Underline" Foreground="Indigo" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,0,-6,-9"/>
-                    </Grid>
-                </Border>
-
-
-                <Border BorderBrush="Gray" BorderThickness="1" Padding="10" Margin="0,0,30,0" CornerRadius="5" Width="320" Height="150">
-                    <Grid>
-
-                        <TextBlock Text="Sales" FontSize="12" FontFamily="Fonts\Poppins-Bold.ttf" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-                        <TextBlock Text="$10,000" FontSize="18" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,22,0,0"/>
-                        <TextBlock Text="View Sales" FontSize="12"  FontFamily="Fonts\Poppins-Bold.ttf" TextDecorations="Underline" Foreground="Indigo" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,0,-6,-9"/>
-                    </Grid>
-                </Border>
-
-
-                <Border BorderBrush="Gray" BorderThickness="1" Padding="10" Margin="0,0,30,0" CornerRadius="5" Width="320" Height="150">
-                    <Grid>
-
-                        <TextBlock Text="Reports" FontSize="12" FontFamily="Fonts\Poppins-Bold.ttf" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-                        <TextBlock Text="10" FontSize="18" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,22,0,0"/>
-                        <TextBlock Text="View Reports" FontSize="12"  FontFamily="Fonts\Poppins-Bold.ttf" TextDecorations="Underline" Foreground="Indigo" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,0,-6,-9"/>
-                    </Grid>
-                </Border>
+            <StackPanel Orientation="Horizontal" Margin="30,30,30,30">
+                <local:DashboardCard Margin="30,30,30,30"/>
+                <local:DashboardCard Margin="30,30,30,30"/>
+                <local:DashboardCard Margin="30,30,30,30"/>
+                <local:DashboardCard Margin="30,30,30,30"/>
 
             </StackPanel>
         </StackPanel>
+        
 
     </Grid>
 </Window>
