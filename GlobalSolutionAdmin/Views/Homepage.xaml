@@ -1,0 +1,50 @@
+﻿<Page x:Class="GlobalSolutionAdmin.Views.Homepage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GlobalSolutionAdmin.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Homepage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <StackPanel Orientation="Vertical" Margin="50" Grid.Column="0">
+
+
+            <Image Source="Resources\dshbrd.png"
+   Style="{StaticResource ImageStyle}"/>
+
+
+            <Image Source="Resources\user.png"
+   Style="{StaticResource ImageStyle}" MouseLeftButtonDown="Image_MouseLeftButtonDown"/>
+
+            <Image Source="Resources\building.png"
+   Style="{StaticResource ImageStyle}"/>
+
+            <Image Source="Resources\logout.png"
+   Style="{StaticResource ImageStyle}"/>
+
+
+        </StackPanel>
+
+
+        <StackPanel Orientation="Vertical" Margin="10" Grid.Column="1">
+            <TextBlock Text="Main Panel" FontFamily="Fonts\Poppins-Bold.ttf" FontWeight="Bold" FontSize="16" Margin="0,0,0,10"/>
+
+            <StackPanel Orientation="Horizontal">
+                <local:DashboardCard Margin="30,30,30,0"/>
+                <local:DashboardCard Margin="30,30,30,0"/>
+                <local:DashboardCard Margin="30,30,30,0"/>
+                <local:DashboardCard Margin="30,30,30,0"/>
+
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

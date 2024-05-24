@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GlobalSolutionAdmin.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,24 @@ namespace GlobalSolutionAdmin
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Image_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            Frame navigationFrame = (Frame)Window.GetWindow(this).FindName("navigationFrame");
+
+            if (navigationFrame != null)
+            {
+                navigationFrame.Content = null;
+                navigationFrame.Navigate(new ClientPage());
+            }
+            else
+            {
+                // Handle the case where Frame is not found (optional)
+                MessageBox.Show("Navigation Frame not found!");
+            }
+
+            
         }
     }
 }
