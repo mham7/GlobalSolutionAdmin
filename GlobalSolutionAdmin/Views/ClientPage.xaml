@@ -48,7 +48,7 @@
 
                 </StackPanel>
                 <Button Content="Add Client" Width="100" Height="30" Background="#89CFF0"  FontFamily="Fonts\Poppins-Bold.ttf" Foreground="White" HorizontalAlignment="Right" Margin="0,0,20,0" Click="AddUserEvent"  />
-                <local:UserControl1 Margin="30,30,30,0"/>
+                <local:UserControl1  Margin="30,30,30,0"/>
             </StackPanel>
         </Grid>
     

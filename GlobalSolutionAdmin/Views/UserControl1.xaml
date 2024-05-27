@@ -5,22 +5,34 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:GlobalSolutionAdmin.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="350" d:DesignWidth="600">
+             d:DesignHeight="350" Width="800">
     <Grid>
         <ListView d:ItemsSource="{d:SampleData ItemCount=5}">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Name" Width="100"/>
-                    <GridViewColumn Header="Phone" Width="100"/>
-                    <GridViewColumn Header="Email" Width="100"/>
-                    <GridViewColumn Header="Occupation" Width="100"/>
-                    <GridViewColumn Header="Sites Rented" Width="100"/>
-                    <GridViewColumn Header="Sites Bought" Width="100"/>
+                    <GridViewColumn Header="Name" Width="100" />
+                    <GridViewColumn Header="Phone" Width="100" />
+                    <GridViewColumn Header="Email" Width="100" />
+                    <GridViewColumn Header="Occupation" Width="100" />
+                    <GridViewColumn Header="Sites Rented" Width="100" />
+                    <GridViewColumn Header="Sites Bought" Width="100" />
 
+                    <GridViewColumn Header="Actions" Width="200">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <Button Content="Edit" Background="#89CFF0" Foreground="White" 
+                                             Width="70"  FontFamily="Fonts\Poppins-Bold.ttf" />
+                                    <Button Content="Delete" Background="#DC143C" Foreground="White"
+                                            Width="70" Margin="5,0,0,0"  FontFamily="Fonts\Poppins-Bold.ttf" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                  
                 </GridView>
-                
             </ListView.View>
         </ListView>
-
     </Grid>
+
 </UserControl>
