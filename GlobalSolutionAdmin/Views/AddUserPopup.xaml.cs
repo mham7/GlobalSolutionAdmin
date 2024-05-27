@@ -10,24 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace GlobalSolutionAdmin.Views
 {
     /// <summary>
-    /// Interaction logic for AddClientButton.xaml
+    /// Interaction logic for AddUserPopup.xaml
     /// </summary>
-    public partial class AddClientButton : UserControl
+    public partial class AddUserPopup : Window
     {
-        public AddClientButton()
+        public AddUserPopup()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
