@@ -14,16 +14,24 @@
                     <GridViewColumn Header="Phone" Width="100" />
                     <GridViewColumn Header="Email" Width="100" />
                     <GridViewColumn Header="Occupation" Width="100" />
-                    <GridViewColumn Header="Sites Rented" Width="100" />
-                    <GridViewColumn Header="Sites Bought" Width="100" />
+                    <GridViewColumn Header="Company" Width="100" />
+                    <GridViewColumn Header="Profit Generated" Width="100" />
+
 
                     <GridViewColumn Header="Actions" Width="200">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal">
-                                    <Button Content="Edit" Background="#89CFF0" Foreground="White" 
-                                             Width="70"  FontFamily="Fonts\Poppins-Bold.ttf" />
-                                    <Button Content="Delete" Background="#DC143C" Foreground="White"
+                                    <Button Content="Update" 
+                                     Background="WhiteSmoke"  
+                                     Foreground="#0047AB"
+                                     BorderBrush="#0047AB"
+                                     BorderThickness="1"
+                                     Width="70"  
+                                     FontFamily="Fonts\Poppins-Bold.ttf" />
+
+                                    <Button Content="Delete" Background="WhiteSmoke" BorderBrush="#DC143C"
+                                            BorderThickness="1" Foreground="#DC143C"
                                             Width="70" Margin="5,0,0,0"  FontFamily="Fonts\Poppins-Bold.ttf" />
                                 </StackPanel>
                             </DataTemplate>
