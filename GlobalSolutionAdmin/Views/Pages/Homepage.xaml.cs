@@ -28,11 +28,5 @@ namespace GlobalSolutionAdmin.Views
             
             NavigationService.Navigate(new ClientPage());
         }
-
-        private void LogoutEvent(object sender, MouseButtonEventArgs e)
-        {
-            LogoutWindow popup = new LogoutWindow();
-            popup.ShowDialog();
-        }
     }
 }

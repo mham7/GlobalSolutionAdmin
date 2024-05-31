@@ -73,6 +73,12 @@
     <Compile Include="Views\Homepage.xaml.cs">
       <DependentUpon>Homepage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\LoginControl.xaml.cs">
+      <DependentUpon>LoginControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LogoutWindow.xaml.cs">
+      <DependentUpon>LogoutWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\UserControl1.xaml.cs">
       <DependentUpon>UserControl1.xaml</DependentUpon>
     </Compile>
@@ -101,6 +107,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Homepage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\LoginControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\LogoutWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
