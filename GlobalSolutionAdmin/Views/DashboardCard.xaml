@@ -22,6 +22,9 @@
     </UserControl.Resources>
     
     <Border Width="220" Height="150" CornerRadius="10" BorderBrush="Gainsboro" BorderThickness="1">
+        <Border.Effect>
+            <DropShadowEffect Color="Black" Direction="0" ShadowDepth="5" BlurRadius="70" Opacity="0.5"/>
+        </Border.Effect>
         <Grid Width="200" Height="150">
             <TextBlock Text="Client" FontSize="18" FontFamily="Fonts\nunito-medium.ttf" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="DarkSlateGray" RenderTransformOrigin="0.534,2.006" Margin="5,10,0,0"/>
             <TextBlock Text="200" FontSize="26" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" FontFamily="c:\users\aliinham\source\repos\globalsolutionadmin\globalsolutionadmin\fonts\poppins-bold.ttf"/>
