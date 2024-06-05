@@ -15,19 +15,18 @@ using System.Windows.Shapes;
 
 namespace GlobalSolutionAdmin.Views
 {
-    /// <summary>
-    /// Interaction logic for AddClientButton.xaml
-    /// </summary>
-    public partial class AddClientButton : UserControl
+   
+    public partial class Homepage : Page
     {
-        public AddClientButton()
+        public Homepage()
         {
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Image_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
-
+            
+            NavigationService.Navigate(new ClientPage());
         }
     }
 }

@@ -15,24 +15,14 @@ using System.Windows.Shapes;
 
 namespace GlobalSolutionAdmin.Views
 {
-   
-    public partial class Homepage : Page
+    /// <summary>
+    /// Interaction logic for AddUserControl.xaml
+    /// </summary>
+    public partial class AddUserControl : UserControl
     {
-        public Homepage()
+        public AddUserControl()
         {
             InitializeComponent();
-        }
-
-        private void Image_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
-        {
-            
-            NavigationService.Navigate(new ClientPage());
-        }
-
-        private void LogoutEvent(object sender, MouseButtonEventArgs e)
-        {
-            LogoutWindow popup = new LogoutWindow();
-            popup.ShowDialog();
         }
     }
 }
