@@ -34,5 +34,10 @@ namespace GlobalSolutionAdmin.Views
             LogoutWindow popup = new LogoutWindow();
             popup.ShowDialog();
         }
+
+        private void Image_MouseLeftButtonDown_1(object sender, MouseButtonEventArgs e)
+        {
+            NavigationService.Navigate(new SitePage());
+        }
     }
 }

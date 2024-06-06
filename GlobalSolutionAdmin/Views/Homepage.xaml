@@ -16,7 +16,7 @@
 
 
         <StackPanel Orientation="Vertical" Margin="50" Grid.Column="0">
-
+          
 
             <Image Source="Resources\dshbrd.png"
    Style="{StaticResource ImageStyle}"/>
@@ -26,7 +26,7 @@
    Style="{StaticResource ImageStyle}" MouseLeftButtonDown="Image_MouseLeftButtonDown"/>
 
             <Image Source="Resources\building.png"
-   Style="{StaticResource ImageStyle}"/>
+   Style="{StaticResource ImageStyle}" MouseLeftButtonDown="Image_MouseLeftButtonDown_1"/>
 
             <Image Source="Resources\logout.png"
    Style="{StaticResource ImageStyle}" MouseLeftButtonDown="LogoutEvent"/>

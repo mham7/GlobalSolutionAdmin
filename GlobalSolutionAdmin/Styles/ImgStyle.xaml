@@ -19,8 +19,9 @@
                         <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
                     </Setter.Value>
                 </Setter>
+                <!-- Add cursor change -->
+                <Setter Property="Cursor" Value="Hand"/>
             </Trigger>
         </Style.Triggers>
     </Style>
-
 </ResourceDictionary>
