@@ -5,7 +5,6 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
    xmlns:local="clr-namespace:GlobalSolutionAdmin.Views"
         mc:Ignorable="d"
-        Icon="D:\dotnet\GlobalSolution\GlobalSolutionAdmin\Views\Resources\global.png"
         Title="Global Solution" Height="450" Width="1100">
     <Grid>
 
