@@ -5,21 +5,20 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:GlobalSolutionAdmin.Views.UserControls"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="900">
+             d:DesignHeight="450" d:DesignWidth="600">
     <Grid>
         <ListView d:ItemsSource="{d:SampleData ItemCount=5}">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="SiteName" Width="100" />
                     <GridViewColumn Header="Location" Width="100" />
-                    <GridViewColumn Header="Capacity" Width="100" />
                     <GridViewColumn Header="Owner" Width="100" />
                     <GridViewColumn Header="Area" Width="100" />
                     <GridViewColumn Header="Floors" Width="100" />
                     <GridViewColumn Header="Demand" Width="100" />
+                   
 
-
-                    <GridViewColumn Header="Actions" Width="200">
+                    <!--<GridViewColumn Header="Actions" Width="200">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal">
@@ -37,7 +36,7 @@
                                 </StackPanel>
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
-                    </GridViewColumn>
+                    </GridViewColumn>-->
 
                 </GridView>
             </ListView.View>

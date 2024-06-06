@@ -4,8 +4,9 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:GlobalSolutionAdmin.Views"
+      xmlns:control="clr-namespace:GlobalSolutionAdmin.Views.UserControls"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="350" d:DesignWidth="800"
       Title="ClientPage">
 
     
@@ -14,31 +15,15 @@
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <GridSplitter Grid.Column="0" Background="LightBlue" Width="2" />
+            <GridSplitter Grid.Column="0"  Width="2" />
 
-            <Grid Grid.Column="0" Background="#FAF9F6">
+            <Grid Grid.Column="0" >
             </Grid>
 
             <Grid Grid.Column="1">
             </Grid>
 
-            <StackPanel Orientation="Vertical" Margin="50" Grid.Column="0">
-
-
-                <Image Source="Resources\dshbrd.png"
-    Style="{StaticResource ImageStyle}"/>
-
-                <Image Source="Resources\user.png"
-    Style="{StaticResource ImageStyle}"/>
-
-                <Image Source="Resources\building.png"
-    Style="{StaticResource ImageStyle}"/>
-
-                <Image Source="Resources\logout.png"
-    Style="{StaticResource ImageStyle}"/>
-
-
-            </StackPanel>
+         <control:Sidebar/>
 
             <StackPanel Orientation="Vertical" Margin="10" Grid.Column="1">
                 <TextBlock Text="Client Data" FontFamily="Fonts\Poppins-Bold.ttf" FontWeight="Bold" FontSize="16" Margin="0,0,0,10"/>

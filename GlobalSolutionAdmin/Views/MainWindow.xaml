@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
    xmlns:local="clr-namespace:GlobalSolutionAdmin.Views"
         mc:Ignorable="d"
-        Title="Global Solution" Height="450" Width="1100">
+        Title="Global Solution" Height="450" Width="1100"
+        Icon="/Views/Resources/global.png"
+        >
     <Grid>
 
 

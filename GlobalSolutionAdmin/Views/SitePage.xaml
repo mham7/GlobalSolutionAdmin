@@ -15,34 +15,18 @@
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <GridSplitter Grid.Column="0" Background="LightBlue" Width="2" />
+        <GridSplitter Grid.Column="0" Width="2" />
 
-        <Grid Grid.Column="0" Background="#FAF9F6">
+        <Grid Grid.Column="0" >
         </Grid>
 
         <Grid Grid.Column="1">
         </Grid>
 
-        <StackPanel Orientation="Vertical" Margin="50" Grid.Column="0">
-
-
-            <Image Source="Resources\dshbrd.png"
-    Style="{StaticResource ImageStyle}"/>
-
-            <Image Source="Resources\user.png"
-    Style="{StaticResource ImageStyle}"/>
-
-            <Image Source="Resources\building.png"
-    Style="{StaticResource ImageStyle}"/>
-
-            <Image Source="Resources\logout.png"
-    Style="{StaticResource ImageStyle}"/>
-
-
-        </StackPanel>
+        <controls:Sidebar/>
 
         <StackPanel Orientation="Vertical" Margin="10" Grid.Column="1">
-            <TextBlock Text="Client Data" FontFamily="Fonts\Poppins-Bold.ttf" FontWeight="Bold" FontSize="16" Margin="0,0,0,10"/>
+            <TextBlock Text="Site Data" FontFamily="Fonts\Poppins-Bold.ttf" FontWeight="Bold" FontSize="16" Margin="0,0,0,10"/>
 
             <StackPanel Orientation="Vertical">
 
@@ -50,7 +34,7 @@
             </StackPanel>
             <Button Content="Add Site" Width="100" Height="30" Background="White" BorderBrush="#50C878"
         BorderThickness="1" FontFamily="Fonts\Poppins-Bold.ttf" Foreground="#50C878" HorizontalAlignment="Right" Margin="0,0,20,0"  />
-            <controls:SiteListView Margin="30,0,0,0"/>
+            <controls:SiteListView Margin="30,30,30,30"/>
         </StackPanel>
     </Grid>
 </Page>
